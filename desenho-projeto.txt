@@ -8,6 +8,13 @@
 4 - Divisão
 5 - Potência
 6 - Raiz Quadrada
-0 - Sair
+7 - Sair
 
 Escolha uma opção:
+
+// SOMA: 2 NUMERO
+// SUBTRACAO: 2 NUMEROS
+// MULTIPLICACAO: 2 NUMEROS
+// DIVISAO: 2 NUMEROS
+// POTENCIA 2 NUMEROS
+// RAIZ QUADRADA: 1 NUMERO
