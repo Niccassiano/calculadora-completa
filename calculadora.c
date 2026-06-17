@@ -63,6 +63,9 @@ int main () {
 
     int opcao;
 
+        do {
+
+
     printf("=========================\n");
     printf(" CALCULADORA COMPLETA\n");
     printf("=========================\n");
@@ -97,6 +100,7 @@ int main () {
 
         float resultado = soma(n1, n2);
         printf("O resultado da soma e: %.2f\n", resultado);
+        printf("\n");
         break;
     }
         
@@ -112,6 +116,7 @@ int main () {
 
         float resultado = subtracao(n1, n2);
         printf("O resultado da subtracao e: %.2f\n", resultado);
+        printf("\n");
         break;
     }
 
@@ -127,6 +132,7 @@ int main () {
 
         float resultado = multiplicacao(n1, n2);
         printf("O resultado da multiplicacao e: %.2f\n", resultado);
+        printf("\n");
         break;
     }
         
@@ -144,6 +150,7 @@ int main () {
         if (n2 != 0) {
             printf("O resultado da divisao e: %.2f\n", resultado);
         }  
+        printf("\n");
         break;
     }
        
@@ -159,6 +166,7 @@ int main () {
 
         float resultado = potencia(base, expoente);
         printf("O resultado da potencia e: %.2f\n", resultado);
+        printf("\n");
         break;
     }
         
@@ -175,11 +183,12 @@ int main () {
         } else {
             printf("Erro: Raiz quadrada de numero negativo nao e permitida.\n");
         }
+        printf("\n");
         break;
     }
          
     case 7: {
-        printf("Voce escolheu a opcao 7 - Sair\n");
+        printf("Encerrando a calculadora...\n");
         break;
     }
         
@@ -188,7 +197,7 @@ int main () {
         break;
     }
 }
+        } while(opcao != 7);
 
     return 0;
-
 }
