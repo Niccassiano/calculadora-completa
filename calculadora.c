@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main () {
 
@@ -30,4 +31,59 @@ int main () {
 
     return 0;
 
+}
+
+float soma(float a, float b){
+    
+    float resultado;
+    resultado = a + b;
+
+    return resultado;
+}
+
+float subtracao(float a, float b){
+    
+    float resultado;
+    resultado = a - b;
+
+    return resultado;
+}
+
+float multiplicacao(float a, float b){
+    
+    float resultado;
+    resultado = a * b;
+
+    return resultado;
+}
+
+float divisao(float a, float b){
+    
+    float resultado;
+    if (b != 0) {
+        resultado = a / b;
+    }
+    else {
+        printf("Erro: Divisao por zero nao e permitida.\n");
+        resultado = 0; // Retorna 0 ou algum valor de erro
+    }
+
+    return resultado;
+    
+}
+
+float potencia(float base, float expoente){
+    
+    float resultado;
+    resultado = pow(base, expoente);
+
+    return resultado;
+}
+
+float raiz(float numero){
+    
+    float resultado;
+    resultado = sqrt(numero);
+
+    return resultado;
 }
