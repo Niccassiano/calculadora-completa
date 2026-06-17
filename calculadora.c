@@ -85,34 +85,109 @@ int main () {
     // switch
 
     switch (opcao){
-    case 1:
+    case 1: {
         printf("Voce escolheu a opcao 1 - Soma\n");
+
+        float n1, n2;
+        printf("Digite o primeiro numero:\n");
+        scanf("%f", &n1);
+
+        printf("Digite o segundo numero\n");
+        scanf("%f", &n2);
+
+        float resultado = soma(n1, n2);
+        printf("O resultado da soma e: %.2f\n", resultado);
         break;
-    case 2:
+    }
+        
+    case 2: {
         printf("Voce escolheu a opcao 2 - Subtracao\n");
+
+        float n1, n2;
+        printf("Digite o primeiro numero:\n");
+        scanf("%f", &n1);
+
+        printf("Digite o segundo numero\n");
+        scanf("%f", &n2);
+
+        float resultado = subtracao(n1, n2);
+        printf("O resultado da subtracao e: %.2f\n", resultado);
         break;
-    case 3:
+    }
+
+    case 3: {
         printf("Voce escolheu a opcao 3 - Multiplicacao\n");
+
+        float n1, n2;
+        printf("Digite o primeiro numero:\n");
+        scanf("%f", &n1);
+
+        printf("Digite o segundo numero\n");
+        scanf("%f", &n2);
+
+        float resultado = multiplicacao(n1, n2);
+        printf("O resultado da multiplicacao e: %.2f\n", resultado);
         break;
-    case 4:
+    }
+        
+    case 4: {
         printf("Voce escolheu a opcao 4 - Divisao\n");
+
+        float n1,n2;
+        printf("Digite o primeiro numero:\n");
+        scanf("%f", &n1);
+
+        printf("Digite o segundo numero\n");
+        scanf("%f", &n2);
+
+        float resultado = divisao(n1, n2);
+        if (n2 != 0) {
+            printf("O resultado da divisao e: %.2f\n", resultado);
+        }  
         break;
-    case 5:
+    }
+       
+    case 5: {
         printf("Voce escolheu a opcao 5 - Potencia\n");
+
+        float base, expoente;
+        printf("Digite a base:\n");
+        scanf("%f", &base);
+
+        printf("Digite o expoente:\n");
+        scanf("%f", &expoente);
+
+        float resultado = potencia(base, expoente);
+        printf("O resultado da potencia e: %.2f\n", resultado);
         break;
-    case 6:
+    }
+        
+    case 6: {
         printf("Voce escolheu a opcao 6 - Raiz Quadrada\n");
-        break;  
-    case 7:
+
+        float numero;
+        printf("Digite o numero:\n");
+        scanf("%f", &numero);
+
+        if (numero >= 0) {
+            float resultado = raiz(numero);
+            printf("O resultado da raiz quadrada e: %.2f\n", resultado);
+        } else {
+            printf("Erro: Raiz quadrada de numero negativo nao e permitida.\n");
+        }
+        break;
+    }
+         
+    case 7: {
         printf("Voce escolheu a opcao 7 - Sair\n");
         break;
-    default:
+    }
+        
+    default: {
         printf("Opcao invalida. Por favor, escolha uma opcao entre 1 e 7.\n");
         break;
+    }
 }
-
-
-
 
     return 0;
 
