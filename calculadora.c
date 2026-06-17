@@ -22,9 +22,36 @@ int main () {
     printf("Escolha: ");
     scanf("%d", &opcao);
 
-    printf("A opcao escolhida foi: %d\n", opcao);
+    // printf("A opcao escolhida foi: %d\n", opcao);
 
+    // switch
 
+    switch (opcao){
+    case 1:
+        printf("Voce escolheu a opcao 1 - Soma\n");
+        break;
+    case 2:
+        printf("Voce escolheu a opcao 2 - Subtracao\n");
+        break;
+    case 3:
+        printf("Voce escolheu a opcao 3 - Multiplicacao\n");
+        break;
+    case 4:
+        printf("Voce escolheu a opcao 4 - Divisao\n");
+        break;
+    case 5:
+        printf("Voce escolheu a opcao 5 - Potencia\n");
+        break;
+    case 6:
+        printf("Voce escolheu a opcao 6 - Raiz Quadrada\n");
+        break;  
+    case 7:
+        printf("Voce escolheu a opcao 7 - Sair\n");
+        break;
+    default:
+        printf("Opcao invalida. Por favor, escolha uma opcao entre 1 e 7.\n");
+        break;
+}
 
 
 
@@ -65,7 +92,7 @@ float divisao(float a, float b){
     }
     else {
         printf("Erro: Divisao por zero nao e permitida.\n");
-        resultado = 0; // Retorna 0 ou algum valor de erro
+        resultado = 0; // retorna 0 ou algum valor de erro
     }
 
     return resultado;
